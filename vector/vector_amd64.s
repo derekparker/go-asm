@@ -10,7 +10,6 @@ start:
   JG notfound
   CMPQ (BX), DX
   JNE notequal
-  CMPQ (BX), DX
   JE found
 
 found:
