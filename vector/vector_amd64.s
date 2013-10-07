@@ -3,7 +3,7 @@ TEXT ·Find+0(SB),$0
   MOVQ    vec+0(FP), BX // BX = &vec[0]
   MOVL    vec+8(FP), CX // len(vec)
   MOVQ    num+24(FP), DX
-  MOVLQSX CX, CX        // CX as int64
+  MOVLQZX CX, CX        // CX as int64
 
 start:
   CMPQ    SI, CX
