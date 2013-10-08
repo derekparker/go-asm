@@ -13,25 +13,25 @@ func TestFind(t *testing.T) {
 	}
 }
 
-func TestAdd(t *testing.T) {
-	vec1 := []int32{1, 2, 3, 4}
-	vec2 := []int32{1, 2, 3, 4}
+func TestSum(t *testing.T) {
+	vec1 := []int32{1, 2, 3, 5}
+	vec2 := []int32{1, 2, 3, 5}
 
 	result := SumVec(vec1, vec2)
 
 	if result[0] != 2 {
-		t.Errorf("Expected 2, got %v", result[0])
+		t.Errorf("Expected 2, got %v, result was: %v", result[0], result)
 	}
 
 	if result[1] != 4 {
-		t.Errorf("Expected 4, got %v", result[1])
+		t.Errorf("Expected 4, got %v, result was: %v", result[0], result)
 	}
 
 	if result[2] != 6 {
-		t.Errorf("Expected 6, got %v", result[2])
+		t.Errorf("Expected 6, got %v, result was: %v", result[0], result)
 	}
 
-	if result[3] != 8 {
-		t.Errorf("Expected 8, got %v", result[3])
+	if result[3] != 10 {
+		t.Errorf("Expected 10, got %v, result was: %v", result[0], result)
 	}
 }
