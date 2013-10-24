@@ -17,7 +17,7 @@ found:
 
 notequal:
   INCQ    SI
-  ADDQ    $8, BX
+  LEAQ    +8(BX), BX
   JMP     start
 
 notfound:
